@@ -56,9 +56,9 @@ Following the simulations, I investigated the generated security alerts, analyze
 - Verified installation of Atomic test libraries under C:\AtomicRedTeam\atomics
 
 📌 Screenshots: Atomic Red Team installation and configuration
-<img width="749" height="440" alt="image" src="https://github.com/user-attachments/assets/6f81ec95-e027-45f2-8daa-8f721fec9120" />
-<img width="654" height="506" alt="image" src="https://github.com/user-attachments/assets/34e38799-132a-45ae-a3da-8671b66ccc0e" />
-<img width="659" height="371" alt="image" src="https://github.com/user-attachments/assets/dc3b8d5c-8554-44b3-a3bc-194a0179a04d" />
+<img width="704" height="440" alt="image" src="https://github.com/user-attachments/assets/6f81ec95-e027-45f2-8daa-8f721fec9120" />
+<img width="704" height="425" alt="image" src="https://github.com/user-attachments/assets/34e38799-132a-45ae-a3da-8671b66ccc0e" />
+<img width="704" height="425" alt="image" src="https://github.com/user-attachments/assets/dc3b8d5c-8554-44b3-a3bc-194a0179a04d" />
 <img width="704" height="425" alt="image" src="https://github.com/user-attachments/assets/c579963e-8e03-4666-a627-12b27640793c" />
 <img width="703" height="406" alt="image" src="https://github.com/user-attachments/assets/d2bd37a5-2c04-4ab2-9833-69867c40303b" />
 
