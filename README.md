@@ -108,95 +108,15 @@ Following the simulations, I investigated the generated security alerts, analyze
 <img width="749" height="390" alt="image" src="https://github.com/user-attachments/assets/a0886506-12f5-4b68-8ad4-3556f0a055be" />
 <img width="748" height="416" alt="image" src="https://github.com/user-attachments/assets/fcc3c973-ccb8-4f80-ba4b-ab153b6a4fc1" />
 
-
-
-
-
-
-
-
-
-
-## SOC Phishing Investigation Report:
+## SOC Investigation Report: Suspicious PowerShell Command Line:
 
 ### Incident Overview:
-- Timestamp: June 18, 2026 – 21:04 (UTC +04:00)
-- Recipient: bob@corp88[.]onmicrosoft[.]com
-- Subject: Salary Revision
-- Sender Email: strangeaccount88@proton[.]me
-- Sender IP Address: 79.135.106.97
-- Attachment: Salary Revision[.]docx
-- Embedded URL: hxxps[://]shareholds[.]com/nam/…
-
-A phishing email impersonating an HR-related salary update was delivered to the target mailbox. The message contained both a malicious document attachment and a credential-harvesting URL designed to prompt user interaction.
-
-### Indicators of Compromise (IOCs):
-- Malicious URL: Flagged by VirusTotal as malicious across multiple security vendors.
-- Sender IP (79.135.106.97): Reported as malicious on AbuseIPDB.
-- Phishing Infrastructure: External ProtonMail sender used to deliver payload.
-
-### Investigation Summary:
-- At 21:04 UTC+04:00 on June 18, 2026, a phishing email titled “Salary Revision” was delivered to the organization’s mailbox. The email leveraged a social engineering lure related to payroll updates and contained:
-  - A Microsoft Word attachment (Salary Revision[.]docx).
-  - A malicious URL intended to redirect the user to an external resource.
-- OSINT validation confirmed multiple malicious indicators associated with both the URL and the sender infrastructure. VirusTotal detections classified the URL as malicious, while AbuseIPDB reports confirmed prior malicious activity associated with the source IP address.
-- Further investigation is required to determine:
-  - Whether additional users were targeted.
-  - Whether the URL or attachment was accessed.
-  - Whether credential theft, malware execution, or unauthorized access occurred.
-
-### Triage (5W1H Analysis):
-- Who:
-  - Sender: strangeaccount88@proton.me
-  - Source IP: 79.135.106.97 (malicious reputation confirmed via AbuseIPDB)
-- What:
-  - Phishing email containing:
-    - Malicious URL
-    - Suspicious attachment (Salary Revision.docx)
-- When:
-  - June 18, 2026 – 21:04 (UTC +04:00)
-- Where:
-  - Recipient: bob@corp88.onmicrosoft.com
-  - Subject: Salary Revision
-- Why:
-  - Likely objective: credential harvesting, malware delivery, or unauthorized access to internal resources.
-- How:
-  - Email successfully bypassed email security controls and was delivered to the user mailbox; bypass vector under investigation.
-
-### Response Actions:
-- Removed phishing email from all affected mailboxes.
-- Blocked malicious indicators:
-  - Sender email
-  - Sender IP address
-  - URL domain and path
-  - Associated attachment indicators
-- Conducted tenant-wide search across:
-  - Sender address
-  - IP address
-  - URL
-  - Attachment name and related artifacts
-- Investigated user interaction with:
-  - URL access
-  - Credential submission attempts
-  - Attachment execution or download
-- Deployed targeted user awareness notification referencing the “Salary Revision” phishing attempt.
-
-### Recommendations:
-- Enhance email security posture using:
-  - Microsoft Defender for Office 365 Safe Links
-  - Safe Attachments detonation policies
-  - Anti-phishing impersonation protections
-- Strengthen email authentication enforcement:
-  - SPF, DKIM, and DMARC alignment and strict policy enforcement.
-- Improve detection tuning for HR/payroll-themed phishing campaigns.
-- Enable continuous monitoring for anomalous authentication and credential abuse patterns.
-- Conduct periodic phishing simulation exercises to reinforce user awareness.
-- Perform gap analysis on email security controls to identify bypass conditions.
-
-### Lessons Learned:
-- Email-based threats can bypass initial filters when using trusted-looking HR or payroll lures.
-- OSINT validation (VirusTotal, AbuseIPDB) is critical for confirming malicious indicators quickly.
-- Message header analysis provides key visibility into email authenticity and routing.
-- Early user interaction prevention is essential to limit credential theft and payload execution.
-- Regular tuning of Safe Links and Safe Attachments policies improves detection coverage.
-- Tenant-wide hunting helps assess blast radius and identify additional impacted users.
+- Alert Name: Suspicious PowerShell Command Line
+- First Activity: June 19, 2026 – 14:53:39 (UTC +04:00)
+- Last Activity: June 19, 2026 – 15:36:06 (UTC +04:00)
+- Affected Endpoint: Windows11
+- User: jenny
+- Severity: High
+- Detection Source: Microsoft Defender for Endpoint
+- MITRE ATT&CK Technique: T1059.001 – PowerShell
+- Category: Execution
