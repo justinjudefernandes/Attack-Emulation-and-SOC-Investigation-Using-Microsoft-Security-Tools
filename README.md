@@ -120,3 +120,27 @@ Following the simulations, I investigated the generated security alerts, analyze
 - Detection Source: Microsoft Defender for Endpoint
 - MITRE ATT&CK Technique: T1059.001 – PowerShell
 - Category: Execution
+
+Microsoft Defender for Endpoint generated a high-severity alert after detecting suspicious PowerShell-related activity on a Windows 11 endpoint. Investigation revealed that a command was executed to modify a Windows Registry Run key, establishing persistence by configuring an application to launch automatically upon user logon.
+
+### Indicators of Compromise (IOCs):
+- Registry Modification:
+    - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+- Executed Command:
+    - cmd.exe /c REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "Atomic Red Team" /t REG_SZ /F /D "C:\Path\AtomicRedTeam.exe"
+- Processes Involved:
+    - powershell.exe
+    - cmd.exe
+- Persistence Mechanism:
+    - Registry Run Key Persistence (MITRE ATT&CK T1547.001)
+ 
+### Investigation Summary:
+At 14:53:39 UTC+04:00 on June 19, 2026, Microsoft Defender for Endpoint generated a "Suspicious PowerShell Command Line" alert categorized under the Execution tactic and mapped to MITRE ATT&CK Technique T1059.001 – PowerShell.
+
+Analysis of endpoint telemetry identified the execution of a command that modified the Windows Registry Run key within the current user's profile. The modification created a persistence mechanism designed to automatically launch an executable during user logon.
+
+Registry-based persistence is a commonly observed adversary technique used to maintain access across system reboots and user sessions. Such activity may also be observed during authorized security testing and adversary emulation exercises.
+
+Further analysis confirmed that the alert was triggered due to the creation of a Run key entry associated with Atomic Red Team activity, resulting in Microsoft Defender classifying the behavior as suspicious and assigning a High severity rating.
+  
+
