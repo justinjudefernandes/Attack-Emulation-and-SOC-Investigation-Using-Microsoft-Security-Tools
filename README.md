@@ -46,8 +46,8 @@ Following the simulations, I investigated the generated security alerts, analyze
 ## Steps Performed:
 ### Atomic Red Team Installation:
 - Before executing the simulations, I configured my Windows 11 lab environment.
-- Excluded the VM's C:\ drive from Microsoft Defender Antivirus to prevent interference with the attack simulations.
-- Installed Atomic Red Team using PowerShell and downloaded the full Atomic test library containing hundreds of MITRE ATT&CK techniques.
+    - Excluded the VM's C:\ drive from Microsoft Defender Antivirus to prevent interference with the attack simulations.
+    - Installed Atomic Red Team using PowerShell and downloaded the full Atomic test library containing hundreds of MITRE ATT&CK techniques.
 
 #### Key Activities:
 - Installed Invoke-AtomicRedTeam PowerShell module
