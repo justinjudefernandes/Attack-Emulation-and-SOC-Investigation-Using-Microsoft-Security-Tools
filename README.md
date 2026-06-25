@@ -1,6 +1,6 @@
 # Attack Emulation and SOC Investigation Using Microsoft Security Tools
 
-## Objective:
+## 🎯 Objective:
 The objective of this project was to gain hands-on experience with adversary emulation and endpoint detection by deploying Atomic Red Team on a Windows 11 environment and executing MITRE ATT&CK-based attack simulations. The project focused on validating Microsoft Defender for Endpoint detections, analyzing generated security alerts, investigating malicious behaviors, and strengthening SOC analyst skills in threat detection, incident investigation, and endpoint response.
 
 ## Project Overview:
