@@ -3,12 +3,12 @@
 ## 🎯 Objective:
 The objective of this project was to gain hands-on experience with adversary emulation and endpoint detection by deploying Atomic Red Team on a Windows 11 environment and executing MITRE ATT&CK-based attack simulations. The project focused on validating Microsoft Defender for Endpoint detections, analyzing generated security alerts, investigating malicious behaviors, and strengthening SOC analyst skills in threat detection, incident investigation, and endpoint response.
 
-## Project Overview:
+## 📊 Project Overview:
 This project focused on deploying and configuring Atomic Red Team on a Windows 11 virtual machine to simulate real-world adversary techniques mapped to the MITRE ATT&CK framework. Multiple attack scenarios were executed, including Registry Run Key persistence (T1547.001), Password Guessing (T1110.001), and PowerShell execution (T1059.001), to validate detection capabilities within Microsoft Defender for Endpoint.
 
 Following the simulations, I investigated the generated security alerts, analyzed endpoint telemetry, reviewed process and registry activity, and performed incident analysis to determine the root cause of the detections. This project provided hands-on experience in adversary emulation, threat detection, alert triage, incident investigation, and endpoint detection and response (EDR) operations using Microsoft security technologies.
 
-### Tools Used:
+### 🛠️ Tools Used:
 - Atomic Red Team
 - Windows PowerShell
 - Windows 11
@@ -18,7 +18,7 @@ Following the simulations, I investigated the generated security alerts, analyze
 - Windows Registry Editor
 - Microsoft Defender Security Portal
 
-### Skill Developed:
+### 🛡️ Skill Developed:
 - Adversary emulation
 - Attack simulation and validation
 - Endpoint Detection and Response (EDR)
@@ -31,7 +31,7 @@ Following the simulations, I investigated the generated security alerts, analyze
 - MITRE ATT&CK mapping
 - Endpoint telemetry analysis
 
-### Key Deliverables:
+### 📁 Key Deliverables:
 - Atomic Red Team deployment and configuration
 - MITRE ATT&CK attack simulations
 - Registry Run Key persistence testing (T1547.001)
@@ -43,7 +43,7 @@ Following the simulations, I investigated the generated security alerts, analyze
 - Detection analysis and findings
 - Security recommendations and remediation actions
 
-## Steps Performed:
+## 🔍 Steps Performed:
 ### Atomic Red Team Installation:
 - Before executing the simulations, I configured my Windows 11 lab environment.
     - Excluded the VM's C:\ drive from Microsoft Defender Antivirus to prevent interference with the attack simulations.
@@ -108,7 +108,7 @@ Following the simulations, I investigated the generated security alerts, analyze
 <img width="749" height="390" alt="image" src="https://github.com/user-attachments/assets/a0886506-12f5-4b68-8ad4-3556f0a055be" />
 <img width="748" height="416" alt="image" src="https://github.com/user-attachments/assets/fcc3c973-ccb8-4f80-ba4b-ab153b6a4fc1" />
 
-## SOC Investigation Report: Suspicious PowerShell Command Line:
+## 🚨 SOC Investigation Report: Suspicious PowerShell Command Line:
 
 ### Incident Overview:
 - Alert Name: Suspicious PowerShell Command Line
