@@ -62,7 +62,7 @@ Following the simulations, I investigated the generated security alerts, analyze
 <img width="704" height="425" alt="image" src="https://github.com/user-attachments/assets/c579963e-8e03-4666-a627-12b27640793c" />
 <img width="703" height="406" alt="image" src="https://github.com/user-attachments/assets/d2bd37a5-2c04-4ab2-9833-69867c40303b" />
 
-### Attack Simulations:
+### ⚔️ Attack Simulations:
 
 #### 1) Persistence Simulation – MITRE ATT&CK T1547.001
 - Technique: Registry Run Keys / Startup Folder
