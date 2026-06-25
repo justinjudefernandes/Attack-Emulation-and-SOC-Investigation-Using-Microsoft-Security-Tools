@@ -45,10 +45,9 @@ Following the simulations, I investigated the generated security alerts, analyze
 
 ## Steps Performed:
 ### Atomic Red Team Installation:
-- Configured a Safe Links policy in Microsoft Defender to protect users from malicious URLs and attachments delivered via email.
-  - Navigated to: Microsoft Defender → Email & collaboration → Policies & rules → Threat policies → Safe Links
-  - Created and deployed a policy named: 'MyDFIR-Justin-SafeLinksforInvestigation'.
-  - Enabled URL rewriting and real-time link scanning to ensure time-of-click protection against phishing and malicious redirects.
+- Before executing the simulations, I configured my Windows 11 lab environment and excluded the VM's C:\ drive from Microsoft Defender Antivirus to prevent interference with the attack simulations.
+
+I then installed Atomic Red Team using PowerShell and downloaded the full Atomic test library containing hundreds of MITRE ATT&CK techniques.
 
 📌 Refer to the below screenshots for policy configuration and summary details.
 <img width="752" height="420" alt="image" src="https://github.com/user-attachments/assets/a6d4dfb9-f579-4f8e-b4b9-35d9a3a73eb5" />
