@@ -179,7 +179,7 @@ Further analysis confirmed that the alert was triggered due to the creation of a
 - The persistence mechanism configured Atomic Red Team to execute automatically upon user login.
 - Microsoft Defender flagged the activity due to registry-based persistence behavior.
 
-### Response Actions:
+### 🛑 Response Actions:
 - Validated whether the activity was authorized and associated with Atomic Red Team testing.
 - Isolated the affected endpoint during the investigation.
 - Removed the identified Run key entry and associated executable.
@@ -188,7 +188,7 @@ Further analysis confirmed that the alert was triggered due to the creation of a
 - Performed a full endpoint scan and remediated identified threats.
 - Reset user credentials and revoked active sessions where required.
 
-### Recommendations:
+### 💡 Recommendations:
 - Enable comprehensive PowerShell logging and monitoring.
 - Implement enhanced monitoring for registry-based persistence techniques.
 - Tune EDR detection rules for PowerShell abuse and startup persistence mechanisms.
@@ -196,7 +196,7 @@ Further analysis confirmed that the alert was triggered due to the creation of a
 - Strengthen endpoint hardening controls to reduce persistence opportunities.
 - Regularly validate detection capabilities through adversary emulation exercises.
 
-### Lessons Learned:
+### 🧠 Lessons Learned:
 - Registry Run Keys remain a common and effective persistence mechanism.
 - PowerShell activity provides valuable indicators of attacker behavior.
 - EDR telemetry enables rapid identification of persistence-related activity.
