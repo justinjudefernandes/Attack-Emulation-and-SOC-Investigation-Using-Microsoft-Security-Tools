@@ -64,11 +64,11 @@ Following the simulations, I investigated the generated security alerts, analyze
 
 ### Attack Simulations:
 
-#### Persistence Simulation – MITRE ATT&CK T1547.001:
+#### Persistence Simulation – MITRE ATT&CK T1547.001
 - Technique: Registry Run Keys / Startup Folder
-  - A persistence mechanism was simulated by modifying Windows Registry Run Keys, allowing a program to execute automatically whenever a user logs on.
+- A persistence mechanism was simulated by modifying Windows Registry Run Keys, allowing a program to execute automatically whenever a user logs on.
 
-##### Skills Demonstrated:
+#### Skills Demonstrated:
 - Attack emulation
 - Persistence techniques
 - Registry-based threat analysis
@@ -79,32 +79,35 @@ Following the simulations, I investigated the generated security alerts, analyze
 <img width="702" height="375" alt="image" src="https://github.com/user-attachments/assets/4227764d-e094-4ce5-8e86-cd1e8f5495b3" />
 <img width="702" height="378" alt="image" src="https://github.com/user-attachments/assets/ca58b59c-c547-4959-9dbe-3e3cb3fdb075" />
 
-#### Password Guessing Simulation – MITRE ATT&CK T1110.001:
+#### Password Guessing Simulation – MITRE ATT&CK T1110.001
 - Technique: Brute Force / Password Guessing
-  - Simulated repeated authentication attempts to mimic password guessing activity commonly observed during account compromise attempts.
+- Simulated repeated authentication attempts to mimic password guessing activity commonly observed during account compromise attempts.
 
-##### Skills Demonstrated:
+#### Skills Demonstrated:
 - Identity attack simulation
 - Authentication monitoring
 - Detection validation
 - Security alert investigation
 
 📌 Screenshots: T1110.001 execution and Defender detections
+<img width="704" height="408" alt="image" src="https://github.com/user-attachments/assets/fca1fd29-089f-4514-842f-1c431eaaff0d" />
+<img width="704" height="388" alt="image" src="https://github.com/user-attachments/assets/7609c335-b1b2-4542-b42e-277927350077" />
+<img width="704" height="387" alt="image" src="https://github.com/user-attachments/assets/e84c5ebf-8a86-46d2-b2e5-8cd422e20bfa" />
 
-3. PowerShell Execution Simulation – MITRE ATT&CK T1059.001
+#### PowerShell Execution Simulation – MITRE ATT&CK T1059.001
+- Technique: PowerShell
+- Executed PowerShell-based commands designed to emulate attacker behavior and trigger endpoint detection mechanisms.
 
-Technique: PowerShell
+#### Skills Demonstrated:
+- Command execution analysis
+- PowerShell threat detection
+- Endpoint telemetry investigation
+- MITRE ATT&CK mapping
 
-Executed PowerShell-based commands designed to emulate attacker behavior and trigger endpoint detection mechanisms.
+📌 Screenshots: T1059.001 execution and generated alerts
+<img width="749" height="390" alt="image" src="https://github.com/user-attachments/assets/a0886506-12f5-4b68-8ad4-3556f0a055be" />
+<img width="748" height="416" alt="image" src="https://github.com/user-attachments/assets/fcc3c973-ccb8-4f80-ba4b-ab153b6a4fc1" />
 
-Skills Demonstrated
-
-Command execution analysis
-PowerShell threat detection
-Endpoint telemetry investigation
-MITRE ATT&CK mapping
-
-📌 Screenshot: T1059.001 execution and generated alerts
 
 
 
