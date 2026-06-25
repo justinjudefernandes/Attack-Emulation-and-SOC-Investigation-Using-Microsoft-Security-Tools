@@ -144,6 +144,7 @@ Registry-based persistence is a commonly observed adversary technique used to ma
 Further analysis confirmed that the alert was triggered due to the creation of a Run key entry associated with Atomic Red Team activity, resulting in Microsoft Defender classifying the behavior as suspicious and assigning a High severity rating.
 
 📌 Screenshot of Evidence:
+
 <img width="749" height="413" alt="image" src="https://github.com/user-attachments/assets/38aa1887-2be3-4250-8a3c-dd287456ab11" />
 
 ### Triage (5W1H Analysis):
