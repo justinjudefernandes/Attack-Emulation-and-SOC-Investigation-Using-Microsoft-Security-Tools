@@ -121,7 +121,7 @@ Following the simulations, I investigated the generated security alerts, analyze
 - MITRE ATT&CK Technique: T1059.001 – PowerShell
 - Category: Execution
 
-Microsoft Defender for Endpoint generated a high-severity alert after detecting suspicious PowerShell-related activity on a Windows 11 endpoint. Investigation revealed that a command was executed to modify a Windows Registry Run key, establishing persistence by configuring an application to launch automatically upon user logon.
+Microsoft Defender for Endpoint generated a high-severity alert after detecting suspicious PowerShell-related activities on a Windows 11 endpoint. Investigation revealed that a command was executed to modify a Windows Registry Run key, establishing persistence by configuring an application to launch automatically upon user logon.
 
 ### Indicators of Compromise (IOCs):
 - Registry Modification:
