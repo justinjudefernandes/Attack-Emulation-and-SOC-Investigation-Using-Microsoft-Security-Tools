@@ -64,7 +64,7 @@ Following the simulations, I investigated the generated security alerts, analyze
 
 ### Attack Simulations:
 
-#### Persistence Simulation – MITRE ATT&CK T1547.001
+#### 1) Persistence Simulation – MITRE ATT&CK T1547.001
 - Technique: Registry Run Keys / Startup Folder
 - A persistence mechanism was simulated by modifying Windows Registry Run Keys, allowing a program to execute automatically whenever a user logs on.
 
