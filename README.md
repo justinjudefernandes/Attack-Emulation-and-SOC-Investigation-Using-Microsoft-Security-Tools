@@ -79,7 +79,7 @@ Following the simulations, I investigated the generated security alerts, analyze
 <img width="702" height="375" alt="image" src="https://github.com/user-attachments/assets/4227764d-e094-4ce5-8e86-cd1e8f5495b3" />
 <img width="702" height="378" alt="image" src="https://github.com/user-attachments/assets/ca58b59c-c547-4959-9dbe-3e3cb3fdb075" />
 
-#### Password Guessing Simulation – MITRE ATT&CK T1110.001
+#### 2) Password Guessing Simulation – MITRE ATT&CK T1110.001
 - Technique: Brute Force / Password Guessing
 - Simulated repeated authentication attempts to mimic password guessing activity commonly observed during account compromise attempts.
 
@@ -94,7 +94,7 @@ Following the simulations, I investigated the generated security alerts, analyze
 <img width="704" height="388" alt="image" src="https://github.com/user-attachments/assets/7609c335-b1b2-4542-b42e-277927350077" />
 <img width="704" height="387" alt="image" src="https://github.com/user-attachments/assets/e84c5ebf-8a86-46d2-b2e5-8cd422e20bfa" />
 
-#### PowerShell Execution Simulation – MITRE ATT&CK T1059.001
+#### 3) PowerShell Execution Simulation – MITRE ATT&CK T1059.001
 - Technique: PowerShell
 - Executed PowerShell-based commands designed to emulate attacker behavior and trigger endpoint detection mechanisms.
 
