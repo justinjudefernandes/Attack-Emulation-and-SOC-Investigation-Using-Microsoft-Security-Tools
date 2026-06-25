@@ -142,5 +142,66 @@ Analysis of endpoint telemetry identified the execution of a command that modifi
 Registry-based persistence is a commonly observed adversary technique used to maintain access across system reboots and user sessions. Such activity may also be observed during authorized security testing and adversary emulation exercises.
 
 Further analysis confirmed that the alert was triggered due to the creation of a Run key entry associated with Atomic Red Team activity, resulting in Microsoft Defender classifying the behavior as suspicious and assigning a High severity rating.
-  
+
+📌 Screenshot of Evidence:
+<img width="749" height="413" alt="image" src="https://github.com/user-attachments/assets/38aa1887-2be3-4250-8a3c-dd287456ab11" />
+
+### Triage (5W1H Analysis):
+
+#### Who:
+- User: jenny
+- Endpoint: Windows11
+- Processes: powershell.exe and cmd.exe
+- Detection Source: Microsoft Defender for Endpoint
+
+#### What:
+- High-severity "Suspicious PowerShell Command Line" alert generated.
+- Registry Run key modified to establish persistence.
+- Automatic execution configured through a Windows startup mechanism.
+
+#### When:
+- First Activity: June 19, 2026 – 14:53:39 (UTC +04:00)
+- Last Activity: June 19, 2026 – 15:36:06 (UTC +04:00)
+
+#### Where:
+- Endpoint: Windows11
+- Registry Location:
+        - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+
+#### Why:
+- Intended to establish persistence through automatic program execution during user logon.
+- Technique commonly associated with adversary persistence behavior and red-team simulations.
+
+#### How:
+- PowerShell activity triggered Defender detection logic.
+- Investigation revealed a cmd.exe process modifying the Run registry key.
+- The persistence mechanism configured Atomic Red Team to execute automatically upon user login.
+- Microsoft Defender flagged the activity due to registry-based persistence behavior.
+
+### Response Actions:
+- Validated whether the activity was authorized and associated with Atomic Red Team testing.
+- Isolated the affected endpoint during the investigation.
+- Removed the identified Run key entry and associated executable.
+- Conducted threat hunting for similar indicators across the environment.
+- Reviewed Microsoft Defender and Windows event logs for related activity.
+- Performed a full endpoint scan and remediated identified threats.
+- Reset user credentials and revoked active sessions where required.
+
+### Recommendations:
+- Enable comprehensive PowerShell logging and monitoring.
+- Implement enhanced monitoring for registry-based persistence techniques.
+- Tune EDR detection rules for PowerShell abuse and startup persistence mechanisms.
+- Conduct periodic threat hunting for unauthorized Run key modifications.
+- Strengthen endpoint hardening controls to reduce persistence opportunities.
+- Regularly validate detection capabilities through adversary emulation exercises.
+
+### Lessons Learned:
+- Registry Run Keys remain a common and effective persistence mechanism.
+- PowerShell activity provides valuable indicators of attacker behavior.
+- EDR telemetry enables rapid identification of persistence-related activity.
+- MITRE ATT&CK mapping improves investigation accuracy and threat classification.
+- Adversary emulation exercises help validate detection and response capabilities.
+- Early containment actions reduce the risk of persistence and lateral movement.
+
+
 
