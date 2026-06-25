@@ -8,7 +8,7 @@ This project focused on deploying and configuring Atomic Red Team on a Windows 1
 
 Following the simulations, I investigated the generated security alerts, analyzed endpoint telemetry, reviewed process and registry activity, and performed incident analysis to determine the root cause of the detections. This project provided hands-on experience in adversary emulation, threat detection, alert triage, incident investigation, and endpoint detection and response (EDR) operations using Microsoft security technologies.
 
-### 🛠️ Tools Used:
+### 🧰 Tools Used:
 - Atomic Red Team
 - Windows PowerShell
 - Windows 11
